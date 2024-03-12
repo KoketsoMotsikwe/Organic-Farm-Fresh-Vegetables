@@ -609,35 +609,74 @@ input[type=text], select, textarea {
   footer {
     width: 100%;
     background: #fbe4e4;
-    padding: 10px 0; 
+    padding: 10px 0; /* Adjusted padding */
 }
 
 footer .footer_main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px 20px;
+    grid-gap: 10px 20px; /* Adjusted grid gap */
 }
 
 footer .footer_main .footer_tag h1 {
-    margin: 10px 0; 
+    margin: 10px 0; /* Adjusted margin */
 }
 
 footer .footer_main .footer_tag p {
-    margin: 5px 0;
+    margin: 5px 0; /* Adjusted margin */
     cursor: pointer;
 }
 
 footer .footer_main .footer_tag p i {
-    margin-right: 5px;
+    margin-right: 5px; /* Adjusted margin */
 }
 
 footer .end {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4px 0;
+    padding: 4px 0; /* Adjusted padding */
 }
 
 footer .end span i {
-    margin: 0 5px; 
+    margin: 0 5px; /* Adjusted margin */
 }
+/* 
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    margin-top:6px;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical
+    
+  
+  }
+  
+  input[type=submit] {
+    background-color: #9cc0b3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  input[type=submit]:hover {
+    background-color: #4CAF50;
+    border: none;
+  }
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+  
+  } */
