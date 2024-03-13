@@ -651,6 +651,147 @@ footer .end {
 footer .end span i {
     margin: 0 5px; /* Adjusted margin */
 }
+<<<<<<< HEAD
+
+
+.shopping-cart .box-container{
+    max-width: 1200px;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    align-items: center;
+    gap:1.5rem;
+    justify-content: center;
+ }
+ 
+ .shopping-cart .box-container .box{
+    text-align: center;
+    padding:2rem;
+    border-radius: .5rem;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    border:var(--border);
+ }
+ 
+ .shopping-cart .box-container .box .fa-times{
+    position: absolute;
+    top:1rem; right:1rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    background-color: var(--red);
+    color:var(--white);
+    border-radius: .5rem;
+ }
+ 
+ .shopping-cart .box-container .box .fa-times:hover{
+    background-color: var(--black);
+ }
+ 
+ .shopping-cart .box-container .box img{
+    height: 30rem;
+ }
+ 
+ .shopping-cart .box-container .box .name{
+    padding:1rem 0;
+    font-size: 2rem;
+    color:var(--black);
+ }
+ 
+ .shopping-cart .box-container .box .price{
+    padding:1rem 0;
+    font-size: 2.5rem;
+    color:var(--red);
+ }
+ 
+ .shopping-cart .box-container .box input[type="number"]{
+    margin:.5rem 0;
+    border:var(--border);
+    border-radius: .5rem;
+    padding:1.2rem 1.4rem;
+    font-size: 2rem;
+    color:var(--black);
+    width: 9rem;
+ }
+ 
+ .shopping-cart .box-container .box .sub-total{
+    padding-top: 1.5rem;
+    font-size: 2rem;
+    color:var(--light-color);
+ }
+ 
+ .shopping-cart .box-container .box .sub-total span{
+    color:var(--red);
+ }
+ 
+ .shopping-cart .cart-total{
+    max-width: 1200px;
+    margin:0 auto;
+    border:var(--border);
+    padding:2rem;
+    text-align: center;
+    margin-top: 2rem;
+    border-radius: .5rem;
+ }
+ 
+ .shopping-cart .cart-total p{
+    font-size: 2.5rem;
+    color:var(--light-color);
+ }
+ 
+ .shopping-cart .cart-total p span{
+    color:var(--red);
+ }
+ 
+ .shopping-cart .cart-total .flex{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap:1rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+ }
+ 
+ .shopping-cart .disabled{
+    pointer-events: none;
+    opacity: .5;
+    user-select: none;
+ }
+ 
+ .display-order{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 0;
+ }
+ 
+ .display-order p{
+    background-color: var(--light-bg);
+    color:var(--black);
+    font-size: 2rem;
+    padding:1rem 1.5rem;
+    border:var(--border);
+    display: inline-block;
+    margin:.5rem;
+ }
+ 
+ .display-order p span{
+    color:var(--red);
+ }
+ 
+ .display-order .grand-total{
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    color:var(--light-color);
+ }
+ 
+ .display-order .grand-total span{
+    color:var(--red);
+ }
+ 
+ 
+=======
 /* 
 .container {
     max-width: 800px;
@@ -715,3 +856,4 @@ input[type=text], select, textarea {
   }
 
   /* home */
+>>>>>>> 17e3d94a2a7d321a2ea245cb2ca51004eaa78554
