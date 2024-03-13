@@ -551,14 +551,6 @@ input[type=text], select, textarea {
     padding: 0 16px;
   }
   
-  .container {
-    background-color:  #acc7a8;
-    padding: 5px 20px 15px 20px;
-    border: 1px solid lightgrey;
-    border-radius: 3px;
-    padding-top: 100px;
-  }
-  
   .input[type=text] {
     width: 100%;
     margin-bottom: 20px;
