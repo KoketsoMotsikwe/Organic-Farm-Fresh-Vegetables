@@ -842,9 +842,9 @@ input[type=text], select, textarea {
   }
 
   @media screen and (max-width: 1200px) {
-    }
     #hamburger-nav {
       display: flex;
     }
 }
+
  
