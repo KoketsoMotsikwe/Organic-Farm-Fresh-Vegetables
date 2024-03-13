@@ -509,19 +509,25 @@ input[type=text], select, textarea {
    border-radius: 10px;
     margin: 0 auto;
     padding-top:30px; 
-    max-width: 500px;
     width: 100%;
     text-align: center;
     overflow: auto;
+    box-sizing: border-box;
     
   }
   .form {
      display: inline-block;
+     border-radius: 10px;
      text-align: left;
-     width: 200px;
+     width: 100%;
+     max-width: 500px;
      margin: 0 auto;
      align-items: center;
      justify-content: center;
+  }
+  body{
+    margin: 0;
+    padding: 0;
   }
 
   .contact{
