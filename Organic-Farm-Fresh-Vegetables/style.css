@@ -510,7 +510,7 @@ input[type=text], select, textarea {
     margin: 0 auto;
     box-sizing: border-box;
     padding-top:30px; 
-    max-width: 90%;
+    max-width: 50%;
     text-align: center;
     overflow: auto;
     
@@ -562,7 +562,7 @@ input[type=text], select, textarea {
     border: 1px solid lightgrey;
     border-radius: 3px;
     padding-top: 30px;
-    max-width: 100%;
+    max-width: 50%;
   }
   
   .input[type=text] {
@@ -690,28 +690,9 @@ input[type=text], select, textarea {
     padding: 20px;
   
   } */
-  /* home */
-  .menu-toggle {
-    display: none;
-  }
-  
-  .menu-toggle:checked + .menu {
-    display: block;
-  }
-  
-  .menu {
-    display: none;
-  }
-  
-  @media (max-width: 768px) {
-    .menu-toggle-label {
-      display: block;
-      cursor: pointer;
-    }
-    
-    .menu {
-      display: none;
-    }
-  }
 
+<<<<<<< HEAD
   /* home */
+=======
+  
+>>>>>>> 59b7b4670dc85627ae715a2a042a89128b4cf60e
