@@ -506,7 +506,7 @@ input[type=text], select, textarea {
   .container {
     border-radius: 10px;
     background-color: #f2f2f2;
-    padding:5px 20px 15px 10px;
+    padding:40px;
     margin: 0 auto;
     box-sizing: border-box;
     padding-top:30px; 
@@ -522,6 +522,7 @@ input[type=text], select, textarea {
      width: 400px;
      margin: 0 auto;
      align-items: center;
+     justify-content: center;
   }
 
   .contact{
