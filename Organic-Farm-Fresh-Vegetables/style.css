@@ -510,7 +510,7 @@ input[type=text], select, textarea {
     margin: 0 auto;
     box-sizing: border-box;
     padding-top: 150px; 
-    max-width: 100%;
+    max-width: 90%;
     text-align: center;
     overflow: auto;
     
