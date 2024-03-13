@@ -506,10 +506,20 @@ input[type=text], select, textarea {
   .container {
     border-radius: 10px;
     background-color: #f2f2f2;
-    padding: 10px;
-    padding-top: 150px; 
-    width: 1000px;
+    padding:5px 20px 15px 10px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top:30px; 
+    max-width: 90%;
+    text-align: center;
+    overflow: auto;
     
+  }
+  .form {
+     display: inline-block;
+     text-align: left;
+     width: 400px;
+     margin: 0 auto;
   }
 
   .contact{
@@ -546,16 +556,16 @@ input[type=text], select, textarea {
   .col-75 {
     padding: 0 16px;
   }
-  
   .container {
     background-color:  #acc7a8;
-    padding: 5px 20px 15px 20px;
+    padding: 5px 20px 15px 10px;
     border: 1px solid lightgrey;
     border-radius: 3px;
-    padding-top: 100px;
+    padding-top: 30px;
+    max-width: 100%;
   }
   
-  input[type=text] {
+  .input[type=text] {
     width: 100%;
     margin-bottom: 20px;
     padding: 12px;
@@ -563,7 +573,7 @@ input[type=text], select, textarea {
     border-radius: 3px;
   }
   
-  label {
+  .label {
     margin-bottom: 10px;
     display: block;
   }
@@ -609,38 +619,39 @@ input[type=text], select, textarea {
   footer {
     width: 100%;
     background: #fbe4e4;
-    padding: 10px 0; 
+    padding: 10px 0; /* Adjusted padding */
 }
 
 footer .footer_main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px 20px;
+    grid-gap: 10px 20px; /* Adjusted grid gap */
 }
 
 footer .footer_main .footer_tag h1 {
-    margin: 10px 0; 
+    margin: 10px 0; /* Adjusted margin */
 }
 
 footer .footer_main .footer_tag p {
-    margin: 5px 0;
+    margin: 5px 0; /* Adjusted margin */
     cursor: pointer;
 }
 
 footer .footer_main .footer_tag p i {
-    margin-right: 5px;
+    margin-right: 5px; /* Adjusted margin */
 }
 
 footer .end {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4px 0;
+    padding: 4px 0; /* Adjusted padding */
 }
 
 footer .end span i {
-    margin: 0 5px; 
+    margin: 0 5px; /* Adjusted margin */
 }
+<<<<<<< HEAD
 
 
 .shopping-cart .box-container{
@@ -780,3 +791,69 @@ footer .end span i {
  }
  
  
+=======
+/* 
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    margin-top:6px;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical
+    
+  
+  }
+  
+  input[type=submit] {
+    background-color: #9cc0b3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  input[type=submit]:hover {
+    background-color: #4CAF50;
+    border: none;
+  }
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+  
+  } */
+  /* home */
+  .menu-toggle {
+    display: none;
+  }
+  
+  .menu-toggle:checked + .menu {
+    display: block;
+  }
+  
+  .menu {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-toggle-label {
+      display: block;
+      cursor: pointer;
+    }
+    
+    .menu {
+      display: none;
+    }
+  }
+
+  /* home */
+>>>>>>> 17e3d94a2a7d321a2ea245cb2ca51004eaa78554
