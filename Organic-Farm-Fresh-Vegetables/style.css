@@ -558,14 +558,8 @@ input[type=text], select, textarea {
     border-radius: 3px;
     padding-top: 100px;
   }
-  .form {
-    display: inline-block;
-    text-align: left;
-    max-width: 300px;
-    margin: 0 auto;
-  }
   
-  input[type=text] {
+  .input[type=text] {
     width: 100%;
     margin-bottom: 20px;
     padding: 12px;
@@ -573,7 +567,7 @@ input[type=text], select, textarea {
     border-radius: 3px;
   }
   
-  label {
+  .label {
     margin-bottom: 10px;
     display: block;
   }
