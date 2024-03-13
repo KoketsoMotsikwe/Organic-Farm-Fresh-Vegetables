@@ -510,7 +510,7 @@ input[type=text], select, textarea {
     margin: 0 auto;
     box-sizing: border-box;
     padding-top:30px; 
-    max-width: 90%;
+    max-width: 50%;
     text-align: center;
     overflow: auto;
     
@@ -562,7 +562,7 @@ input[type=text], select, textarea {
     border: 1px solid lightgrey;
     border-radius: 3px;
     padding-top: 30px;
-    max-width: 100%;
+    max-width: 50%;
   }
   
   .input[type=text] {
