@@ -505,9 +505,8 @@ input[type=text], select, textarea {
   /* Add a background color and some padding around the form */
   .container {
    background-color: #f2f2f2;
-  padding:40px;
+   padding:40px;
     margin: 0 auto;
-    box-sizing: border-box;
     padding-top:30px; 
     max-width: 500px;
     width: 100%;
@@ -518,7 +517,7 @@ input[type=text], select, textarea {
   .form {
      display: inline-block;
      text-align: left;
-     width: 400px;
+     width: 200px;
      margin: 0 auto;
      align-items: center;
      justify-content: center;
