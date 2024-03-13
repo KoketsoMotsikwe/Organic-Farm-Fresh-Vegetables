@@ -572,6 +572,7 @@ input[type=text], select, textarea {
     padding-top: 30px;
     max-width: 500px;
     width: 100%;
+    overflow: auto;
   }
   
   .input[type=text] {
