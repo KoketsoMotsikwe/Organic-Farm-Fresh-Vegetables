@@ -525,11 +525,6 @@ input[type=text], select, textarea {
      align-items: center;
      justify-content: center;
   }
-  body{
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
 
   .contact{
     padding-bottom: 50px;
