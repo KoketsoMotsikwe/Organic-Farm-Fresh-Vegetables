@@ -528,6 +528,7 @@ input[type=text], select, textarea {
   body{
     margin: 0;
     padding: 0;
+    display: flex;
   }
 
   .contact{
@@ -592,12 +593,13 @@ input[type=text], select, textarea {
     margin-bottom: 20px;
     padding: 7px 0;
     font-size: 24px;
+    overflow: auto;
   }
   
   .btn {
     background-color: #04AA6D;
     color: white;
-    padding: 12px;
+    padding: 5px;
     margin: 10px 0;
     border: none;
     width: 100%;
