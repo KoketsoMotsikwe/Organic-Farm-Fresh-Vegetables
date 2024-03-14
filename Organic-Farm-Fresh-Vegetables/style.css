@@ -532,9 +532,6 @@ input[type=text], select, textarea {
     padding-top: 100px;
 
     transition: transform .5s;
-
-   
-
 }
 
 svg{
@@ -661,7 +658,7 @@ header{
 
     width: 400px;
 
-    background-color: #353432;
+    background-color: #2d352d;
 
     color: #eee;
 

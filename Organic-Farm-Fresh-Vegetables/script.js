@@ -148,66 +148,51 @@ const addCartToMemory = () => {
 }
 
 const addCartToHTML = () => {
-
     listCartHTML.innerHTML = '';
-
     let totalQuantity = 0;
+    let totalPrice = 0;
 
-    if(cart.length > 0){
-
+    if (cart.length > 0) {
         cart.forEach(item => {
-
-            totalQuantity = totalQuantity +  item.quantity;
-
-            let newItem = document.createElement('div');
-
-            newItem.classList.add('item');
-
-            newItem.dataset.id = item.product_id;
-
- 
+            totalQuantity += item.quantity;
 
             let positionProduct = products.findIndex((value) => value.id == item.product_id);
-
             let info = products[positionProduct];
 
+           
+            let subtotal = info.price * item.quantity;
+            totalPrice += subtotal; 
+
+            let newItem = document.createElement('div');
+            newItem.classList.add('item');
+            newItem.dataset.id = item.product_id;
+
+     
+            let formattedPrice = formatPrice(subtotal);
+
             listCartHTML.appendChild(newItem);
-
             newItem.innerHTML = `
-
             <div class="image">
-
-                    <img src="${info.image}">
-
-                </div>
-
-                <div class="name">
-
+                <img src="${info.image}">
+            </div>
+            <div class="name">
                 ${info.name}
-
-                </div>
-
-                <div class="totalPrice">$${info.price * item.quantity}</div>
-
-                <div class="quantity">
-
-                    <span class="minus"><</span>
-
-                    <span>${item.quantity}</span>
-
-                    <span class="plus">></span>
-
-                </div>
-
-            `;
-
+            </div>
+            <div class="totalPrice">${formattedPrice}</div>
+            <div class="quantity">
+                <span class="minus"><</span>
+                <span>${item.quantity}</span>
+                <span class="plus">></span>
+            </div>`;
         })
-
     }
 
+ 
     iconCartSpan.innerText = totalQuantity;
 
+    iconCartSpan.nextElementSibling.innerText = formatPrice(totalPrice);
 }
+
 
  
 
