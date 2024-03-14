@@ -1,0 +1,101 @@
+[
+
+    {
+
+        "id": 1,
+
+        "name":" Beetroot",
+
+        "price": 30,
+
+        "image": "images/beet1.png"
+
+    },
+
+    {
+
+        "id": 2,
+
+        "name":"Potatoes",
+
+        "price": 50,
+
+        "image": "images/potatoes2.png"
+
+    },
+
+    {
+
+        "id": 3,
+
+        "name":" Tomatoes",
+
+        "price": 30,
+
+        "image": "images/tomato1.png"
+
+    },
+
+    {
+
+        "id": 4,
+
+        "name":" Green Beans",
+
+        "price": 40,
+
+        "image": "images/green beans.png"
+
+    },
+
+    {
+
+        "id": 5,
+
+        "name":" Garlic",
+
+        "price": 50,
+
+        "image": "images/garlic.png"
+
+    },
+
+    {
+
+        "id": 6,
+
+        "name":" Onion",
+
+        "price": 30,
+
+        "image": "images/onion.png"
+
+    },
+
+    {
+
+        "id": 7,
+
+        "name":" Red Onion",
+
+        "price": 70,
+
+        "image": "images/redonion.png"
+
+    },
+
+    {
+
+        "id": 8,
+
+        "name":" Cauliflower",
+
+        "price": 50,
+
+        "image": "images/cauli.png"
+
+    }
+
+ 
+
+]
