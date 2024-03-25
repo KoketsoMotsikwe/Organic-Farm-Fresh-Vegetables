@@ -97,6 +97,7 @@ section .home_left p{
     line-height: 23px;
     position: relative;
     top: 25px;
+    font-weight: 600;
 }
 
 section .home_left .home_btn{
@@ -109,6 +110,8 @@ section .home_left .home_btn{
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     transition: 0.3s;
+    font-weight: 600;
+
 }
 
 section .home_left .home_btn:hover{
@@ -120,11 +123,7 @@ section .home_right img{
     margin-left: 95px;
 }
 
-.anim{
-    opacity: 0;
-    transform: translateX(-50px);
-    animation: moveside 0.5s linear forwards;
-}
+
 
 
 /* about section */
