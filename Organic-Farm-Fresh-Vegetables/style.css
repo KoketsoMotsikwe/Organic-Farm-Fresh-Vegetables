@@ -160,6 +160,7 @@ section .home_right img{
     color: #000;
     text-decoration: none;
     transition: 0.3s;
+    font-weight: 600;
 }
 
 .about .about_tag .about_btn:hover{
@@ -531,6 +532,7 @@ input[type=text], select, textarea {
     padding-top: 100px;
 
     transition: transform .5s;
+    
 }
 
 svg{
