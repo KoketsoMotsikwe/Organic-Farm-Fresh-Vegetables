@@ -24,7 +24,6 @@ let closeCart = document.querySelector('.close');
 let products = [];
 
 let cart = [];
-let totalPrice = 0;
 
  
 
