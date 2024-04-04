@@ -97,6 +97,7 @@ section .home_left p{
     line-height: 23px;
     position: relative;
     top: 25px;
+    font-weight: 600;
 }
 
 section .home_left .home_btn{
@@ -109,6 +110,8 @@ section .home_left .home_btn{
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     transition: 0.3s;
+    font-weight: 600;
+
 }
 
 section .home_left .home_btn:hover{
@@ -120,11 +123,7 @@ section .home_right img{
     margin-left: 95px;
 }
 
-.anim{
-    opacity: 0;
-    transform: translateX(-50px);
-    animation: moveside 0.5s linear forwards;
-}
+
 
 
 /* about section */
@@ -161,6 +160,7 @@ section .home_right img{
     color: #000;
     text-decoration: none;
     transition: 0.3s;
+    font-weight: 600;
 }
 
 .about .about_tag .about_btn:hover{
@@ -475,7 +475,7 @@ input[type=text], select, textarea {
   .label {
     margin-bottom: 10px;
     display: block;
-  }
+  }  
   
   .icon-container {
     margin-bottom: 20px;
@@ -532,6 +532,7 @@ input[type=text], select, textarea {
     padding-top: 100px;
 
     transition: transform .5s;
+    
 }
 
 svg{
@@ -878,6 +879,13 @@ body.showCart .container{
     #hamburger-nav {
       display: flex;
     }
+}
+.foot {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px;
+    padding: 10px 0px;
+    border-top: 1px;
 }
 
  

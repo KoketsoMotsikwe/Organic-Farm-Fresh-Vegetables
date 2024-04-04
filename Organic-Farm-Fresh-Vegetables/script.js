@@ -7,7 +7,7 @@ function toggleMenu() {
     icon.classList.toggle("open");
   }
 
-   //Cart
+//Cart
 
 let listProductHTML = document.querySelector('.listProduct');
 
@@ -24,6 +24,7 @@ let closeCart = document.querySelector('.close');
 let products = [];
 
 let cart = [];
+let totalPrice = 0;
 
  
 
@@ -43,11 +44,11 @@ closeCart.addEventListener('click', () => {
 
 const addDataToHTML = () => {
 
-  // remove datas default from HTML
+  // remove data default from HTML
 
  
 
-  // add new datas
+  // add new data
 
   if(products.length > 0) // if has data
 
