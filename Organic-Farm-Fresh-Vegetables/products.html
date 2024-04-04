@@ -59,20 +59,36 @@
                 </svg>
 
                 <span>0</span>
-
+                
             </div>
 
         </header>
 
         </nav>
+        <nav id="hamburger-nav">
+            <div class="logo"><img src="images/organic.png"></div>
+            <div class="hamburger-menu">
+              <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="menu-links">
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
+                <li><a href="products.html" onclick="toggleMenu()">Products</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+              </div>
+            </div>
+          </nav>
 
             <div class="containers">
 
                 <div class="title">Latest Products</div>
 
                 <div class="listProduct">
-
-       
+                    
 
                 </div>
 
@@ -89,12 +105,10 @@
                     <h2>R0.00</h2>
                 </div>
 
-                <!-- <div class="total">Total: R<span id="totalPrice">0</span></div> -->
-
                 <div class="btn">
 
                     <button class="close">Close</button>
-
+                    
                     <button class="checkOut">Check Out</button>
 
                 </div>

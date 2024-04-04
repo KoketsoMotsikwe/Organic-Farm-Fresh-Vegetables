@@ -141,6 +141,17 @@ const addToCart = (product_id) => {
 
 }
 
+const deleteButtons = document.querySelectorAll('.delete-item');
+
+deleteButtons.forEach((button) => {
+    button.addEventListener('click', removeCartItem);
+});
+
+function removeCartItem(event) {
+    const cartItem = event.target.parentElement;
+    cartItem.remove();
+}
+
 const addCartToMemory = () => {
 
     localStorage.setItem('cart', JSON.stringify(cart));
