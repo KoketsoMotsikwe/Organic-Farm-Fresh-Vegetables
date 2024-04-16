@@ -6,6 +6,7 @@ function toggleMenu() {
     menu.classList.toggle("open");
     icon.classList.toggle("open");
   }
+  
 // Selecting DOM elements
 let listProductHTML = document.querySelector('.listProduct');
 let listCartHTML = document.querySelector('.listCart');
@@ -31,7 +32,7 @@ closeCart.addEventListener('click', () => {
 // Function to add product data to HTML
 const addDataToHTML = () => {
     // Clear default data from HTML
-    // (Assuming you would clear listProductHTML here if needed)
+ 
 
     // Add new product data to HTML
     if(products.length > 0) {
