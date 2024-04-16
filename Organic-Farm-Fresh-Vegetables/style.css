@@ -885,5 +885,15 @@ body.showCart .container{
     border-top: 1px;
 }
 
-
+.containe{
+    background-color: #acc7a8;
+    padding: 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    margin: auto; /* Center horizontally */
+    margin-top: 50px; /* Adjust top margin as needed */
+    max-width: 500px;
+    width: calc(100% - 40px);
+    overflow: auto;
+}
  
