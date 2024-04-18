@@ -137,7 +137,7 @@ const addCartToHTML = () => {
                 </div>`;
         }); 
     }
-    total.innerText = totalPrice.toLocaleString();
+    total.innerText = 'R' + totalPrice.toLocaleString();
     iconCartSpan.innerText = totalQuantity;
     iconCartSpan.nextElementSibling.innerText = formatPrice(totalPrice);
 }
