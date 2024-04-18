@@ -880,10 +880,19 @@ body.showCart .container{
 .foot {
     display: flex;
     justify-content: space-between;
-    margin: 20px 10px;
-    padding: 10px 0px;
-    border-top: 1px;
+    align-items: center;
 }
+
+.foot h2{
+    margin-right: 1cm; /* Adjust margin to create space */
+}
+
+
+.total {
+    margin-left: 1cm; /* Adjust margin to create space */
+}
+
+
 
 .containe{
     background-color: #acc7a8;

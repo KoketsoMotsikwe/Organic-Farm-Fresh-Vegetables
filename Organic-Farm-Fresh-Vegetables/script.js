@@ -14,6 +14,7 @@ let iconCart = document.querySelector('.icon-cart');
 let iconCartSpan = document.querySelector('.icon-cart span');
 let body = document.querySelector('body');
 let closeCart = document.querySelector('.close');
+let total = document.querySelector('.total');
 
 // Arrays to hold product and cart data
 let products = [];
@@ -134,9 +135,9 @@ const addCartToHTML = () => {
                     <span>${item.quantity}</span>
                     <span class="plus">></span>
                 </div>`;
-        });
+        }); 
     }
-
+    total.innerText = totalPrice.toLocaleString();
     iconCartSpan.innerText = totalQuantity;
     iconCartSpan.nextElementSibling.innerText = formatPrice(totalPrice);
 }
