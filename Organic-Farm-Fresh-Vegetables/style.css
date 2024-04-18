@@ -943,7 +943,7 @@ padding: 40px;
  .input-box input:focus~label,
  .input-box input:focus~label {
     top: -5px;
- }
+ } 
  .input-box input {
 width: 100%;
 height: 100%;
