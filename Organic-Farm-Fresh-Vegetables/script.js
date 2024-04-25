@@ -194,3 +194,64 @@ const initApp = () => {
 
 // Start the application
 initApp();
+
+// script.js
+
+document.addEventListener('DOMContentLoaded', function () {
+    const contactForm = document.getElementById('contactForm');
+
+    contactForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+        
+        // Get form data
+        const formData = new FormData(contactForm);
+        
+        // Validate form data
+        if (!validateFormData(formData)) {
+            return;
+        }
+        
+        // Send form data to backend
+        sendDataToBackend(formData);
+    });
+    
+    function validateFormData(formData) {
+        // Basic validation
+        const firstName = formData.get('firstname');
+        const lastName = formData.get('lastname');
+        const subject = formData.get('subject');
+        
+        if (!firstName || !lastName || !subject) {
+            alert('Please fill in all fields.');
+            return false;
+        }
+        
+        return true;
+    }
+    
+    function sendDataToBackend(formData) {
+        // Replace 'your-backend-url' with the actual backend endpoint URL
+        fetch('your-backend-url', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            // Handle successful response
+            console.log(data);
+            alert('Form submitted successfully!');
+            contactForm.reset(); // Reset form fields
+        })
+        .catch(error => {
+            // Handle errors
+            console.error('Error:', error);
+            alert('An error occurred. Please try again later.');
+        });
+    }
+});
+
