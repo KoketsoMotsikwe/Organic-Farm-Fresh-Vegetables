@@ -939,9 +939,10 @@ padding: 40px;
     font-size: 1em;
     font-weight: 500;
     pointer-events: none;
+    transition: .5s;
  }
  .input-box input:focus~label,
- .input-box input:focus~label {
+ .input-box input:valid~label {
     top: -5px;
  } 
  .input-box input {
@@ -954,6 +955,46 @@ font-size: 1em;
 font-weight: 600;
 padding: 0 35px 0 5px;
  }
+ .remember-forgot{
+    font-size: .9em;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+
+ }
+ .remember-forgot a {
+    color: hsl(125, 56%, 35%);
+    text-decoration: none;
+ }
+ .remember-forgot a:hover {
+    text-decoration: underline;
+ }
+ .btn {
+    width: 100%;
+    height: 45px;
+    background: hsl(125, 56%, 35%);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+ }  
+ .login-register {
+    font-size: .9em;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+ }
+ .login-register a {
+    color: hsl(125, 56%, 35%);
+    text-decoration: none;
+ }
+ .login-register a:hover {
+    text-decoration: underline;
+ }
+
  .input-box .icon {
     position: absolute;
     right: 8px;
