@@ -1,13 +1,14 @@
-// Selecting DOM elements
-let listProductHTML = document.querySelector('.listProduct');
-let listCartHTML = document.querySelector('.listCart');
-let iconCart = document.querySelector('.icon-cart');
-let iconCartSpan = document.querySelector('.icon-cart span');
-let body = document.querySelector('body');
-let closeCart = document.querySelector('.close');
-let total = document.querySelector('.total');
+(function() {
+  // Selecting DOM elements
+  const listProductHTML = document.querySelector('.listProduct');
+  const listCartHTML = document.querySelector('.listCart');
+  const iconCart = document.querySelector('.icon-cart');
+  const iconCartSpan = document.querySelector('.icon-cart span');
+  const body = document.querySelector('body');
+  const closeCart = document.querySelector('.close');
+  const total = document.querySelector('.total');
 
-// Arrays to hold product and cart data
+  // Arrays to hold product and cart data
 let products = [];
 let cart = [];
 
@@ -145,7 +146,6 @@ const addCartToHTML = () => {
   total.innerText = 'R' + totalPrice.toLocaleString();
   iconCartSpan.innerText = totalQuantity;
   iconCartSpan.nextElementSibling.innerText = formatPrice(totalPrice);
-  addCartToHTML();
 }
 
 // Event listener for changing cart item quantities
@@ -206,6 +206,11 @@ const initApp = () => {
 
 // Start the application
 initApp();
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // Code that relies on the DOM being fully loaded
+  });
+})();
 
 // script.js
 

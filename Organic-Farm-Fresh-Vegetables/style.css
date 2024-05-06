@@ -792,6 +792,11 @@ body.showCart .container{
 
 }
 
+.Condition img {
+    display: none;
+  }
+  
+
  /* HAMBURGER MENU */
 
 #hamburger-nav {
