@@ -76,24 +76,31 @@
       </div>
     </nav>
 
-    <div class="container">
-        <form class="form">
-          
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      
-       
-      
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Massege here....." style="height:200px"></textarea>
-      
-          <input type="submit" value="Submit">
-      
+    <section>
+      <div class="Register-container">
+        <form action="#" method="post"> 
+          <h2>Register</h2>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</address></label>
+                <input type="email" id="email" name="Email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <button type="submit">Register</button>
+            <p>Already have an account? <a href="login-link">Log In</a></p> 
         </form>
-      </div>
+    </div>
+    </section>
 
    
 

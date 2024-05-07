@@ -192,5 +192,150 @@ const initApp = () => {
     });
 }
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('.form');
+    
+    form.addEventListener('submit', async function(event) {
+        event.preventDefault(); // Prevent the form from submitting
+
+        let isValid = true;
+        
+        // Reset error messages
+        const errorMessages = document.querySelectorAll('.error-message');
+        errorMessages.forEach(msg => msg.remove());
+        
+        // Validation for Full Name
+        const firstname = document.getElementById('fname');
+        if (firstname.value.trim() === '') {
+            displayError(firstname, 'Full Name is required.');
+            isValid = false;
+        }
+        
+        // Validation for Email
+        const email = document.getElementById('email');
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email.value)) {
+            displayError(email, 'Invalid Email format.');
+            isValid = false;
+        }
+        
+        // Validation for Address
+        const address = document.getElementById('adr');
+        if (address.value.trim() === '') {
+            displayError(address, 'Address is required.');
+            isValid = false;
+        }
+        
+        // Validation for City
+        const city = document.getElementById('city');
+        if (city.value.trim() === '') {
+            displayError(city, 'City is required.');
+            isValid = false;
+        }
+        
+        // Validation for Province
+        const state = document.getElementById('state');
+        if (state.value.trim() === '') {
+            displayError(state, 'Province is required.');
+            isValid = false;
+        }
+        
+        // Validation for Zip Code
+        const zip = document.getElementById('zip');
+        const zipPattern = /^\d{5}$/;
+        if (!zipPattern.test(zip.value)) {
+            displayError(zip, 'Invalid Zip Code format.');
+            isValid = false;
+        }
+        
+        // Validation for Name on Card
+        const nameoncard = document.getElementById('cname');
+        if (nameoncard.value.trim() === '') {
+            displayError(nameoncard, 'Name on Card is required.');
+            isValid = false;
+        }
+        
+        // Validation for Credit Card Number
+        const cardnumber = document.getElementById('ccnum');
+        const ccnumPattern = /^\d{4}-\d{4}-\d{4}-\d{4}$/;
+        if (!ccnumPattern.test(cardnumber.value)) {
+            displayError(cardnumber, 'Invalid Credit Card number format.');
+            isValid = false;
+        }
+        
+        // Validation for Exp Month
+        const expmonth = document.getElementById('expmonth');
+        if (expmonth.value.trim() === '') {
+            displayError(expmonth, 'Exp Month is required.');
+            isValid = false;
+        }
+        
+        // Validation for Exp Year
+        const expyear = document.getElementById('expyear');
+        const currentYear = new Date().getFullYear().toString().slice(2);
+        if (expyear.value.trim() === '' || parseInt(expyear.value) < parseInt(currentYear)) {
+            displayError(expyear, 'Invalid Exp Year.');
+            isValid = false;
+        }
+        
+        // Validation for CVV
+        const cvv = document.getElementById('cvv');
+        const cvvPattern = /^\d{3}$/;
+        if (!cvvPattern.test(cvv.value)) {
+            displayError(cvv, 'Invalid CVV format.');
+            isValid = false;
+        }
+        
+        // Submit the form if valid
+        if (isValid) {
+            const formData = {
+                firstname: firstname.value,
+                email: email.value,
+                address: address.value,
+                city: city.value,
+                state: state.value,
+                zip: zip.value,
+                nameoncard: nameoncard.value,
+                cardnumber: cardnumber.value,
+                expmonth: expmonth.value,
+                expyear: expyear.value,
+                cvv: cvv.value
+            };
+
+            try {
+                const response = await fetch('/api/farmfresh', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`Server responded with ${response.status}: ${response.statusText}`);
+                }
+
+                const data = await response.json();
+                console.log('Data saved:', data);
+                // Handle success (e.g., display a success message)
+            } catch (error) {
+                console.error('Error saving data:', error.message);
+                // Handle error (e.g., display an error message)
+            }
+        }
+    });
+    
+    function displayError(input, message) {
+        const errorMessage = document.createElement('p');
+        errorMessage.className = 'error-message';
+        errorMessage.textContent = message;
+        input.parentNode.insertBefore(errorMessage, input.nextSibling);
+    }
+});
+
+
+
+
 // Start the application
 initApp();
